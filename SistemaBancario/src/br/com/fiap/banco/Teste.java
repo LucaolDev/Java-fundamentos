@@ -10,12 +10,12 @@ public class Teste {
 		
 		cc.depositar(1000);
 		
-		System.out.println(cc.verificarSaldo());
-		
-		Conta poupanca = new Conta (111, 222, 1000);
-		poupanca.retirar(50);
-		
-		System.out.println(poupanca.verificarSaldo());
+		  System.out.println(cc.verificarSaldo());
+		  
+		  Conta poupanca = new Conta (111, 222, 1000); poupanca.retirar(50);
+		  
+		  System.out.println(poupanca.verificarSaldo());
+		 
 		
 	}
 }
