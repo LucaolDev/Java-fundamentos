@@ -3,19 +3,20 @@ package br.com.fiap.banco;
 public class Teste {
 	public static void main(String[] args) {
 
-		Conta cc = new Conta();
-		cc.agencia = 123;
-		cc.numero = 321;
-		cc.saldo = 50.0;
+		Conta conta1 = new Conta();
+		conta1.depositar(1000);
+		conta1.retirar(100);
 		
-		cc.depositar(1000);
+		Conta conta2 = new ContaCorrente();
+		conta2.depositar(1000);
+		conta2.retirar(100);
 		
-		  System.out.println(cc.verificarSaldo());
-		  
-		  Conta poupanca = new Conta (111, 222, 1000); poupanca.retirar(50);
-		  
-		  System.out.println(poupanca.verificarSaldo());
-		 
+		ContaCorrente conta3 = new ContaCorrente();
+		conta3.depositar(1000);
+		conta3.retirar(100);
 		
-	}
+		System.out.println("Conta1: " + conta1.getSaldo());
+		System.out.println("Conta2: " + conta2.getSaldo());
+		System.out.println("Conta3: " + conta3.getSaldo());
+ 	}
 }
